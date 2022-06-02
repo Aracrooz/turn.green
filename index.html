@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
     <head>
         
         <meta charset="utf-8">
@@ -48,6 +48,9 @@
                             <form class="d-flex p-3">
                                 <input class="form-control me-2" type="search" placeholder="Szukaj..." aria-label="Search">
                             </form>
+							<button type="button" class="btn" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+								<img id="home" src="cart.png" class="img-fluid" width="21px" height="21px" alt="...">
+							</button>		
                         </div>
                     </nav>
                 </div>
@@ -55,6 +58,15 @@
         </header>        
         
         <main>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header">
+					<h5 id="offcanvasRightLabel">Koszyk</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<button type="button" class="m-3 btn btn-outline-success position-absolute bottom-0 start-0">Kup teraz</button>
+				</div>
+			</div>
             <div class="row">
             <img id="home" src="wiatraki.jpg" class="img-fluid" alt="...">
             </div>
